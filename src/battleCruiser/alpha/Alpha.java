@@ -1,26 +1,21 @@
 package battleCruiser.alpha;
 
-import android.app.Activity;
-import android.opengl.GLSurfaceView;
-import android.os.Bundle;
+import javax.swing.*;
+public class Alpha extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4232015141048999640L;
 
-public class Alpha extends Activity {
-	private GLSurfaceView mainView;
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mainView = new GLSurfaceView(this);
-        mainView.setRenderer(new BattleRender());
-        //mainView.queueEvent(r);
-        setContentView(R.layout.main);
-    }
-    public void onPause(){
-    	//TODO
-    	super.onPause();
-    }
-    public void onResume(){
-    	//TODO
-    	super.onResume();
+	//private GLSurfaceView mainView;
+	public Alpha(){
+		super("Testing");
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setSize(200,200);
+		this.setVisible(true);
+	}
+    public static void main(String sa[]){
+    	new Alpha();
+    	
     }
 }
