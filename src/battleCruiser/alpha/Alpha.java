@@ -1,7 +1,13 @@
 package battleCruiser.alpha;
-
 import javax.swing.*;
-public class Alpha extends JFrame {
+/**
+ * Alpha
+ * BattleCruiser Alpha
+ * 
+ * main init class
+ * @author Jeff
+ */
+public class Alpha {
 	/**
 	 * 
 	 */
@@ -9,10 +15,7 @@ public class Alpha extends JFrame {
 
 	//private GLSurfaceView mainView;
 	public Alpha(){
-		super("Testing");
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setSize(200,200);
-		this.setVisible(true);
+
 	}
     public static void main(String sa[]){
     	new Alpha();
