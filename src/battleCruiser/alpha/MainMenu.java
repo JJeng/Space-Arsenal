@@ -1,12 +1,16 @@
 package battleCruiser.alpha;
 
 import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.JTextPane;
+import javax.swing.SwingConstants;
 
 public class MainMenu extends JPanel {
 	JButton newGame;
@@ -29,11 +33,16 @@ public class MainMenu extends JPanel {
 		multiplayer.setName("multi");
 		quit = new JButton("Quit");
 		quit.setName("quit");
-		this.setLayout(new BorderLayout());
-		this.add(newGame,BorderLayout.CENTER);
-		this.add(loadGame,BorderLayout.CENTER);
-		this.add(multiplayer,BorderLayout.CENTER);
-		this.add(quit,BorderLayout.CENTER);
-		this.add(new JTextField("Battle Cruiser"),BorderLayout.NORTH);
+		
+		JLabel title = new JLabel("Battle Cruiser");
+		title.setHorizontalTextPosition(SwingConstants.CENTER);
+		title.setVerticalTextPosition(SwingConstants.CENTER);
+		this.setLayout(new GridLayout(5,1));
+		this.add(title);
+		this.add(newGame);
+		this.add(loadGame);
+		this.add(multiplayer);
+		this.add(quit);
+		
 	}
 }
