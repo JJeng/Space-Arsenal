@@ -19,7 +19,8 @@ public class Alpha {
 		mainWindow = new Gui("Battle Cruiser Alpha .01");
 		//Gui is online
 		//Init Sound thread and store handle
-		se = new SoundEngine();
+		se = SoundEngine.getInstance();
+		se.getMixersInfo();
 	}
     public static void main(String sa[]){
     	new Alpha();

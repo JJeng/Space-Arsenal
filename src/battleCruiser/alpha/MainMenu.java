@@ -23,6 +23,7 @@ public class MainMenu extends JPanel {
 		newGame.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent ae){
 				//TODO: Create New Character
+				
 				//TODO: Load Relevant Game Data
 				//TODO: 
 			}
@@ -45,4 +46,5 @@ public class MainMenu extends JPanel {
 		this.add(quit);
 		
 	}
+
 }
